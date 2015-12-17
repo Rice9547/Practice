@@ -1,0 +1,19 @@
+/*ALL*/
+body{
+    background-color: #f9e9d2;
+}
+
+/*TOP*/
+.top.style1{
+    background-color: #f9e9d2;
+    background-position: top left, center center;
+    background-size: auto, cover;
+}
+
+/*MID*/
+.mid.style1{
+}
+
+/*BOT*/
+.bot.style1{
+}
