@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
     <style type="text/css">
-        .Hide {display: none}
+        /*.Hide {display: none}*/
     </style>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -18,24 +18,31 @@
                 $("#intro").hide();
                 $("#Final").show();                
             })
+            $('rd').click(function(){
+                var r = Math.floor((Math.random() * 3) + 1)==2;
+                if(r==1) alert("Win");
+                else if(r==2) alert("again");
+                else alert("lose");
+            })
         })
     </script>
 </head>
-<body align="center" valign="center">
-    <div class="top style1" align="center" valign="center">
-        <input type="button" value="製作理念" id="clk1">
-        <input type="button" value="已完成作品" id="clk2">
-    </div>
-    <div class="mid style1" align="center"  valign="center">
-        <div id="intro" class="Hide">
+<body>
+	<!--div class="top style1" align="center">
+	  <input name="button" type="button" id="clk1" value="製作理念">
+	  <input name="button2" type="button" id="clk2" value="已完成作品">
+	</div-->
+	<div class="mid style1">
+	  <div id="Final" class="Hide">
+          <table border="1">
+              <tr>
+                  <td><a href="index.html">首頁</a></td>
+              </tr>
+          </table>
         </div>
-        <div id="Final" class="Hide">
-            <table border="1">
-                <tr>
-                    <td><a href="index.html">首頁</a></td>
-                </tr>
-            </table>
-        </div>
-    </div>
+	</div>
+    <input name="剪刀" type="button" value="1" id="rd">;
+    <input name="剪刀" type="button" value="2" id="rd">;
+    <input name="剪刀" type="button" value="3" id="rd">;
 </body>
 </html>

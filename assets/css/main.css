@@ -12,6 +12,10 @@ body{
 
 /*MID*/
 .mid.style1{
+    position: absolute;
+    bottom: 50%;
+    width: 50%;
+    right: 0%;
 }
 
 /*BOT*/
